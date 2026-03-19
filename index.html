@@ -99,12 +99,31 @@
       <div class="projects">
         <div class="project-card">
           <h3>LADDER Geospatial Data Analysis App</h3>
-          <p>Short description of the project.</p>
+          <p>LADDER is a data analysis app created with the goal in mind to assist farmers in making data driven decisions using their own personal harvest data.<br>
+          LADDER included an autonomous John Deere downloader that utilized John Deere's API to continously gathered farm data as it was completed. Users could then use this data to aggregate/rasterize data points, perform spatial joins around soil sample points, and create topoly maps of their fields.<br>
+          Futhermore, LADDER included a data model generation feature where the user could define features and a target column of their data. LADDER would then generate a data model that users could use to predict future yields by uploading a file with the same feature columns (in most cases; a soil sample).
+
+          <br>
+          LADDER included other feature such as auto report generation, user-friendly data plotting, and soil data enrichment (using web soil surveys API). 
+
+          <h4>Skills Used:</h4>
+          <ul>
+              <li>Python</li>
+              <li>Pandas, Geopandas</li>
+              <li>Lazy Dask Dataframes</li>
+              <li>Matplotlib</li>
+              <li>Tkinter</li>
+              <li>APIs</li>
+              <li>Oauth2 Authentication</li>
+              <li>Docker</li>
+
+          </ul>
+        </p>
         </div>
         <div class="project-card">
           <h3>Mobile PFAS Detection Rover</h3>
           <p>An Ardurover based vehicle capable of transition between water and land seamlessly. This rover was created to autonomously test bodies of water for microplastics.<br>
-            A water intake system and water testing system was designed that kept the rovers sterile water "blanks" separate from test samples to avoid cross contamination.<br>
+            A water intake system and water testing system was designed that kept the rovers sterile water control samples separate from test samples to avoid cross contamination.<br>
             A potentiostat was then used in conjunction with a functionlized polymer electrode to determine if microplastics were present. <br><br>
           </p>
 
@@ -118,6 +137,8 @@
               <li>GPS</li>
               <li>Radio Telemetry</li>
               <li>C++, LUA, Python</li>
+              <li>ArduPilot</li>
+              <li>RC Control</li>
           </ul>
           <img src = Images/IMG_0715.jpeg style="width: 50%;">
           <img src = Images/watertransfer.gif style="width: 50%;">
