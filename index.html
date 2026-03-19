@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwin Portfolio
+  </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #1f2937;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f2937;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jadwin Manuel</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Brief introduction about yourself, your engineering focus, and what you specialize in.
+      </p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p>
+        B.S. Computer Engineering at Mississippi State University
+      </p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>LADDER Geospatial Data Analysis App</h3>
+          <p>LADDER is a data analysis app created with the goal in mind to assist farmers in making data driven decisions by using their own farms' harvest data.<br>
+          LADDER included an autonomous John Deere downloader that utilized John Deere's API to continously gathered farm data as it was completed. Users could then use this data to aggregate/rasterize data points, perform spatial joins around soil sample points, and create topology maps of their fields.<br>
+          Futhermore, LADDER included a data model generation feature where the user could define features and a target column of their data. LADDER would then generate a data model that users could use to predict future yields by uploading a file with the same feature columns (in most cases; a soil sample).
+
+          <br>
+          LADDER included other feature such as auto report generation, user-friendly data plotting, and soil data enrichment (using web soil surveys API). 
+
+          <h4>Skills Used:</h4>
+          <ul>
+              <li>Python</li>
+              <li>Pandas, Geopandas</li>
+              <li>Lazy Dask Dataframes</li>
+              <li>Matplotlib</li>
+              <li>Tkinter</li>
+              <li>APIs</li>
+              <li>Oauth2 Authentication</li>
+              <li>Docker</li>
+
+          </ul>
+        </p>
+        </div>
+        <div class="project-card">
+          <h3>Mobile PFAS Detection Rover</h3>
+          <p>An Ardurover based vehicle capable of transition between water and land seamlessly. This rover was created to autonomously test bodies of water for microplastics.<br>
+            A water intake system and water testing system was designed that kept the rovers sterile water control samples separate from test samples to avoid cross contamination.<br>
+            A potentiostat was then used in conjunction with a functionlized polymer electrode to determine if microplastics were present. <br><br>
+          </p>
+
+          <h4>Skills Used:</h4>
+          <ul>
+              <li>Circuit/PCB Design</li>
+              <li>LiPo Power System</li>
+              <li>DC Motors</li>
+              <li>Peristaltic Pump</li>
+              <li>Water Sensors</li>
+              <li>GPS</li>
+              <li>Radio Telemetry</li>
+              <li>Radio Control</li>
+              <li>C++, LUA, Python</li>
+              <li>ArduPilot</li>
+              <li>Mission Planner</li>
+              <li>3D Printing</li>
+              
+          </ul>
+          <img src = Images/IMG_0715.jpeg style="width: 50%;">
+          <img src = Images/watertransfer.gif style="width: 50%;">
+
+        </div>
+        <div class="project-card">
+          <h3>ArduPilot Fixed Wing UAV</h3>
+          <p>An ArduPilot based fixed with UAV capable of autonomous, guided, and manual flight modes.</p>
+          <br>This UAV had features such as throw for takeoff, auto loitering failsafe mode, and differential thrust. 
+          <h4>Skills Used:</h4>
+            <ul>
+                <li>Drone Assembly and Wiring</li>
+                <li>LiPo Power System</li>
+                <li>RC Control</li>
+                <li>Flight Tuning</li>
+                <li>ArduPilot</li>
+                <li>Mission Planner</li>
+
+            </ul>
+            <img src = Images/IMG_0756.jpeg style="width: 50%;">
+            <img src = Images/DroneFlip.gif style="width: 50%;">
+        </div>
+        <div class="project-card">
+          <h3>Automated Logos Autonomous Field Painting Rover</h3>
+          <p>An Ardurover based vehicle capable of painting fields for recreational sports events. This was for my cornerstone senior design class in the Electrical and Computer Engineering department.<br>
+          Automated Logos utilized an Ardurover flight controller and a RaspberryPi single board computer to give users an intuitive way to autonomously paint a large field. The user created their design using primative shapes. These shapes were then uploaded to the flight controller and converted into waypoints for an autonomous mission. 
+          <br>
+          Automated Logos used an RTK enabled GPS and was capable of centimeter level accuracy. 
+          <h4>Skills Used:</h4>
+            <ul>
+                <li>Circuit/PCB Design</li>
+                <li>Sensored Brushed Motors</li>
+                <li>Lead Acid Battery Power System</li>
+                <li>DC Motors</li>
+                <li>Ardurover</li>
+                <li>Mission Planner</li>
+                <li>3D Printing</li>
+              <img src = Images/IMG_0285.jpeg style="width: 50%;">
+              <img src = Images/AutomatedLogos.gif style="width: 50%;">
+            </ul>
+          </p>
+        </div>
+        <div class="project-card">
+          <h3>IEEE SECON Hardware Competition 2023</h3>
+          <p>An autonomous mobile robot capable of sweeping up rubber ducks and depositting them into a predetermined area. <br><br>
+            This robot utilized a sensor fusion algorithm that fused the MPU, front IR sensor, and side IR sensors together using a complementary filter to estimate it's heading as well as its position on the field.<br>
+            A "stuck-detection" function was created for this robot so it would accelerate forward to offset speed losses due to obstacles on the course.<br>This had the added benefit of moving the robot out of local minimums and maximums.
+          </p>
+            <h4>Skills Used:</h4>
+            <ul>
+                <li>Circuit/PCB Design</li>
+                <li>C++</li>
+                <li>Sensor Fusion</li>
+                <li>PID Control</li>
+                <li>I2C MPU Implementation</li>
+                <li>Serial IR Distance Sensors</li>
+                <li>Ultrasonic Sensors </li>
+                <li>DC Motors</li>
+                <li>Stepper Motors</li>
+                <li>3D Printing</li>
+            </ul>
+            <img src = Images/seconducks.gif style="width: 50%;">
+            <img src = Images/secondepo.gif style="width: 50%;">
+            <img src = Images/3DBoard.PNG style="width: 50%;">
+
+          
+        </div>
+        <div class="project-card">
+          <h3>IEEE SECON Hardware Competition 2022</h3>
+          <p>An autonomous non-gps guided robot capable of retrieving bead necklaces and throwing them into nets.<br>
+            This robot utilized a RaspberryPi, an Arduino, and 2 RaspberryPi cameras to navigate around a field and recognize when it has found a net to shoot into. 
+            The competition for this year was Mardi Gras themed, so we added a screen, speakers, and RGB LEDs to play music videos while the robot completed it's tasks. 
+            This robot used a mecanum drive train
+
+          </p>
+            <h4>Skills Used:</h4>
+            <ul>
+                <li>Python, C++, Linux</li>
+                <li>OpenCV, PySerial</li>
+                <li>Haar Cascades</li>
+                <li>Sensor Fusion</li>
+                <li>PID Control</li>
+                <li>I2C MPU Implementation</li>
+                <li>Serial IR Distance Sensors</li>
+                <li>Ultrasonic Sensors </li>
+                <li>DC Motors</li>
+                <li>Servos</li>
+                <li>Mecanum Wheels</li>
+                <li>3D Printing</li>
+                
+            </ul>
+            <img src = Images/BartBot.PNG style="width: 50%;">
+            <img src = Images/BartBot.gif style="width: 50%;">
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: jadwinmanuel@gmail.com</p>
+      <p>LinkedIn: <a href=https://www.linkedin.com/in/jadwinmanuel>www.linkedin.com/in/jadwinmanuel</href></p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Jadwin Manuel</p>
+  </footer>
+
+</body>
+</html>
